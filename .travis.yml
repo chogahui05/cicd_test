@@ -2,5 +2,7 @@ language: java
 jdk: 
   - openjdk8
 install: true
+before-script:
+  - echo $GH_HATE
 script:
   - mvn clean package -DskipTests=true
